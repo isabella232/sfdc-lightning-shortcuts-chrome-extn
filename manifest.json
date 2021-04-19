@@ -1,0 +1,9 @@
+{
+  "name": "SFDC Lightning Shortcuts",
+  "description": "Shortcuts for launching various pages",
+  "version": "0.1",
+  "manifest_version": 3,
+  "browser_action": {
+    "default_title": "Open a salesforce lightning page"
+  }
+}
