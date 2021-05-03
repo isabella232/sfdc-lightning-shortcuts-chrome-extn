@@ -1,12 +1,22 @@
 <html>
   <head>
     <title>Where do you want to go?</title>
+    <style>
+      button {
+        display: block;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-      <button id="setupHome" value="setupHome">Setup</button>
-      <button id="objectManager" value="objectManager">Object Manager</button>
-      <button id="sandboxes" value="sandboxes">Sandboxes</button>
-      <button id="debugLogs" value="debugLogs">Debug Logs</button>
+    <div class="main">
+      <button data-src="setupHome">Setup</button>
+      <button data-src="objectManager">Object Manager</button>
+      <button data-src="sandboxes">Sandboxes</button>
+      <button data-src="debugLogs">Debug Logs</button>
+      <button data-src="deployments">Deployments</button>
+      <button data-src="classic">Switch to Classic</button>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
