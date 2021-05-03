@@ -12,7 +12,7 @@ function navigate(ev) {
     const src = ev.target.dataset['src'];
     const path = urlMapping[src];
     chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-	    const baseURL = tabs[0].url;
+	    const baseURL = getBaseURLFromPageURL(tabs[0].url);
 	    // Open new tab
 	    chrome.tabs.create({
 	        url: baseURL + path,
@@ -20,6 +20,14 @@ function navigate(ev) {
 	    });
 	});
 }
+
+function getBaseURLFromPageURL(pageURL) {
+	// pageURL is for the form https://abc
+	// base url is the url till the next / found after https://
+	// which is 8 chars long
+	return pageURL.substring(0, pageURL.indexOf('/', 8))
+}
+
 const allButtons = document.getElementsByTagName("button");
 const allButtonsArray = Array.from(allButtons);
 allButtonsArray.forEach(function(buttonElement) {
