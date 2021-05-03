@@ -4,6 +4,7 @@
   "version": "0.1",
   "manifest_version": 3,
   "action": {
+    "default_icon":  "images/shortcut.png",
     "default_popup": "popup.html"
   },
   "permissions": [
