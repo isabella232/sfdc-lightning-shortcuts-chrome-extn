@@ -4,11 +4,11 @@
   "version": "0.2",
   "manifest_version": 3,
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "background.js"
   },
   "action": {
     "default_icon":  "images/shortcut.png",
-    "default_popup": "popup.html"
+    "default_popup": "html/popup.html"
   },
   "permissions": [
     "tabs"

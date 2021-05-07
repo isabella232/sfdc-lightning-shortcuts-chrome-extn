@@ -2,8 +2,13 @@
   <head>
     <title>Where do you want to go?</title>
     <style>
+      .main {
+        width: 200px;
+      }
+
       button {
         background-color: #4CAF50;/* Green */
+        padding: 10px 0;
         width: 100%;
         border: 1px solid green;
         color: white;
@@ -25,15 +30,18 @@
   </head>
   <body>
     <div class="main">
-      <button data-src="setupHome">Setup</button>
-      <button data-src="objectManager">Object Manager</button>
-      <button data-src="devConsole">Debug Console</button>
-      <button data-src="sandboxes">Sandboxes</button>
-      <button data-src="debugLogs">Debug Logs</button>
-      <button data-src="deployments">Deployments</button>
-      <button data-src="customMetadata">Custom Metadata</button>
-      <button data-src="classic">Switch to Classic</button>
+      <h4>Some handy shortcuts in Lightning view:</h4>
+      <div class="btn-group">
+        <button data-src="setupHome">Setup</button>
+        <button data-src="objectManager">Object Manager</button>
+        <button data-src="devConsole">Debug Console</button>
+        <button data-src="sandboxes">Sandboxes</button>
+        <button data-src="debugLogs">Debug Logs</button>
+        <button data-src="deployments">Deployments</button>
+        <button data-src="customMetadata">Custom Metadata</button>
+        <button data-src="classic">Switch to Classic</button>
+      </div>
     </div>
-    <script src="../scripts/popup.js"></script>
+    <script src="../popup.js"></script>
   </body>
 </html>
