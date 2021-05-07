@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Where do you want to go?</title>
+    <style>
+      button {
+        background-color: #4CAF50;/* Green */
+        width: 100%;
+        border: 1px solid green;
+        color: white;
+        cursor: pointer;
+        display: block;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      button:not(:last-child) {
+        border-bottom: none;/* Prevent double borders */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <button data-src="setupHome">Setup</button>
+      <button data-src="objectManager">Object Manager</button>
+      <button data-src="devConsole">Debug Console</button>
+      <button data-src="sandboxes">Sandboxes</button>
+      <button data-src="debugLogs">Debug Logs</button>
+      <button data-src="deployments">Deployments</button>
+      <button data-src="customMetadata">Custom Metadata</button>
+      <button data-src="classic">Switch to Classic</button>
+    </div>
+    <script src="../scripts/popup.js"></script>
+  </body>
+</html>
