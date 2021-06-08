@@ -1,13 +1,13 @@
 {
   "name": "Salesforce Lightning Shortcuts",
   "description": "Shortcuts for launching various Salesforce Lightning setup pages",
-  "version": "0.2",
+  "version": "1",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_icon":  "images/shortcut.png",
+    "default_icon": "images/shortcut.png",
     "default_popup": "html/popup.html"
   },
   "permissions": [
