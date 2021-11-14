@@ -18,7 +18,7 @@ function navigate(ev) {
 	    // Open new tab
 	    chrome.tabs.create({
 	        url: baseURL + path,
-	        active: false
+	        active: true
 	    });
 	});
 }
