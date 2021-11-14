@@ -4,6 +4,7 @@ const urlMapping = {
     "sandboxes": "/lightning/setup/DataManagementCreateTestInstance/home",
     "debugLogs": "/lightning/setup/ApexDebugLogs/home",
     "deployments": "/lightning/setup/DeployStatus/home",
+    "customSettings": "/lightning/setup/CustomSettings/home",
     "customMetadata": "/lightning/setup/CustomMetadata/home",
     "devConsole": "/_ui/common/apex/debug/ApexCSIPage",
     "classic": "/ltng/switcher?destination=classic",
